@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Playbook de Vendas para Barbeiros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&display=swap">
+<style>
+/* Identidade Podium (marca-mãe): navy #0A1422 / #16273C, branco e #F2F2F2 compartilhados; dourado #D7AB5C exclusivo Podium e mentorias, degradê até #F8F1A5. Display em Playfair Display, texto em Google Sans. Layout: sidebar de seções + coluna de leitura, blocos interativos por seção. */
+:root{
+  --bg:#f2f2f2; --bg-subtle:#e9eaec; --bg-tint:#f6eedd; --surface:#ffffff;
+  --ink:#0a1422; --fg:#16273c; --fg-muted:#55606f; --fg-subtle:#808895;
+  --border:#dcdee2; --border-strong:#c3c7cd;
+  --primary:#9a7330; --primary-hover:#7f5e25; --primary-press:#6a4e1f; --on-primary:#0a1422;
+  --gold:#d7ab5c; --gold-light:#f8f1a5; --gold-grad:linear-gradient(100deg,#d7ab5c 0%,#e9cf86 60%,#f8f1a5 100%);
+  --success:#2e7d32; --success-bg:#dff3e0; --danger:#9b2a2a; --danger-bg:#f9e6e4; --warning:#7a5a12; --warning-bg:#f6eedd;
+  --hero-bg:#0a1422; --hero-fg:#ffffff; --hero-muted:#d7ab5c;
+  --shadow:0 0 0 1px var(--border); --shadow-lg:0 8px 32px rgba(10,20,34,.14);
+  --font-display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --font-body:'Google Sans','Google Sans Flex','Product Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-data:'Google Sans','Google Sans Flex',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:10px; --r-lg:18px; --r-pill:9999px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0a1422; --bg-subtle:#111d30; --bg-tint:#2a2a22; --surface:#16273c;
+  --ink:#ffffff; --fg:#e6e9ee; --fg-muted:#a3adbb; --fg-subtle:#7d8899;
+  --border:#22354f; --border-strong:#2f4766;
+  --primary:#d7ab5c; --primary-hover:#e6c27a; --primary-press:#f8f1a5; --on-primary:#0a1422;
+  --success:#86d48a; --success-bg:#16331f; --danger:#f2a39b; --danger-bg:#3a1d22; --warning:#e9cf86; --warning-bg:#2a2a22;
+  --hero-bg:#16273c; --hero-fg:#ffffff; --hero-muted:#d7ab5c;
+  --shadow:0 0 0 1px var(--border); --shadow-lg:0 8px 32px rgba(0,0,0,.5); color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0a1422; --bg-subtle:#111d30; --bg-tint:#2a2a22; --surface:#16273c;
+  --ink:#ffffff; --fg:#e6e9ee; --fg-muted:#a3adbb; --fg-subtle:#7d8899;
+  --border:#22354f; --border-strong:#2f4766;
+  --primary:#d7ab5c; --primary-hover:#e6c27a; --primary-press:#f8f1a5; --on-primary:#0a1422;
+  --success:#86d48a; --success-bg:#16331f; --danger:#f2a39b; --danger-bg:#3a1d22; --warning:#e9cf86; --warning-bg:#2a2a22;
+  --hero-bg:#16273c; --hero-fg:#ffffff; --hero-muted:#d7ab5c;
+  --shadow:0 0 0 1px var(--border); --shadow-lg:0 8px 32px rgba(0,0,0,.5); color-scheme:dark;
+}
+.sym,.word{display:block;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat}
+.sym{--m:var(--sym-m)}
+:root{--sym-m:url(data:image/png;base64,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)}
+.sym{aspect-ratio:363/338}
+.word{--m:url(data:image/png;base64,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);aspect-ratio:1263/127}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-display);color:var(--ink);text-wrap:balance;margin:0}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+
+/* Shell */
+.shell{display:grid;grid-template-columns:1fr;max-width:1240px;margin:0 auto}
+@media(min-width:960px){.shell{grid-template-columns:240px minmax(0,1fr);gap:40px;padding-inline:24px}}
+.side{display:none}
+@media(min-width:960px){.side{display:block;position:sticky;top:env(safe-area-inset-top,0px);align-self:start;height:100vh;padding-block:28px;overflow:auto}}
+.brand{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.brand-mark{width:38px;height:38px;border-radius:var(--r);background:#0a1422;color:#d7ab5c;display:grid;place-items:center;padding:7px;flex:none}.brand-mark .sym{width:100%}
+.brand-name{color:var(--ink);line-height:1.1;display:flex;flex-direction:column;gap:5px}.brand-name .word{width:96px}
+.brand-name small{display:block;font-weight:500;color:var(--fg-muted);font-size:11.5px;letter-spacing:.04em}
+.nav{display:flex;flex-direction:column;gap:2px;list-style:none;margin:0;padding:0}
+.nav a{display:flex;gap:10px;align-items:center;padding:9px 12px;border-radius:var(--r);color:var(--fg-muted);text-decoration:none;font-size:14px;font-weight:500;transition:background .15s,color .15s}
+.nav a:hover{background:var(--bg-subtle);color:var(--ink)}
+.nav a.active{background:var(--surface);box-shadow:inset 2px 0 0 var(--gold);color:var(--ink);font-weight:600}
+.nav .n{font-family:var(--font-data);font-size:11px;font-variant-numeric:tabular-nums;width:20px;color:inherit;opacity:.7}
+
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;flex-direction:column;gap:10px}
+@media(min-width:960px){.topbar{display:none}}
+.topbar .brand{margin:0}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;padding:6px 12px;border-radius:var(--r-pill);border:1px solid var(--border);font-size:13px;font-weight:500;color:var(--fg-muted);text-decoration:none;white-space:nowrap}
+.chips a.active{background:var(--gold);border-color:var(--gold);color:#0a1422}
+
+main{min-width:0;padding-inline:16px;padding-block:24px 80px;display:flex;flex-direction:column;gap:72px}
+@media(min-width:960px){main{padding-inline:0;padding-block:28px 96px}}
+
+/* Hero */
+.hero{background:var(--hero-bg);color:var(--hero-fg);border-radius:var(--r-lg);padding:32px 24px;display:grid;gap:28px;position:relative;overflow:hidden}
+@media(min-width:720px){.hero{padding:44px 44px}}
+.hero .eyebrow{color:var(--hero-muted)}
+.hero h1{color:var(--hero-fg);font-size:clamp(32px,5.4vw,52px);line-height:1.08;font-weight:400;max-width:24ch}.hero h1 em{font-style:normal;color:#d7ab5c;display:block}.hero-logo{display:flex;align-items:center;gap:14px;color:#fff}.hero-logo .sym{width:40px;color:#d7ab5c}.hero-logo .word{width:132px}.hero::after{content:"";position:absolute;right:-90px;top:-70px;width:340px;aspect-ratio:363/338;background:#d7ab5c;opacity:.07;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;pointer-events:none}.hero > *{position:relative;z-index:1}
+.hero p.lead{color:#c9d0db;max-width:58ch;font-size:17px}
+.formula{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.formula .term{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:10px 14px;min-width:0}
+.formula .term b{display:block;font-family:var(--font-display);font-size:18px;font-weight:500;color:#fff}
+.formula .term span{font-size:12.5px;color:#a3adbb}
+.formula .term.last{background:linear-gradient(100deg,#d7ab5c 0%,#e9cf86 60%,#f8f1a5 100%);border-color:transparent}.formula .term.last b{color:#0a1422}
+.formula .term.last span{color:#3a3a2a}
+@media(max-width:600px){.formula{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}.formula .op{display:none}}
+.formula .op{color:#d7ab5c;font-weight:500;font-size:20px}
+.golden{display:flex;gap:12px;align-items:flex-start;border-top:1px solid rgba(215,171,92,.35);padding-top:20px;color:#c9d0db;font-size:15px}
+.golden strong{color:#d7ab5c}
+
+/* Section */
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);font-family:var(--font-body)}
+.sec{display:flex;flex-direction:column;gap:24px}
+.sec-head{display:flex;flex-direction:column;gap:8px;max-width:66ch}
+.sec-head h2{font-size:clamp(26px,3.6vw,34px);line-height:1.15;font-weight:400}
+.sec-head p{color:var(--fg-muted);font-size:16.5px}
+.sub{font-family:var(--font-display);font-size:22px;font-weight:400}
+
+.card{background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow);padding:20px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+
+/* Mentalidade */
+.principle h3{font-size:17px;font-weight:600;font-family:var(--font-body);margin-bottom:6px}
+.principle p{color:var(--fg-muted);font-size:15px}
+.principle .quote{display:block;margin-top:10px;font-size:14px;color:var(--fg);background:var(--bg-subtle);border-radius:var(--r);padding:8px 10px}
+
+/* Filtros */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filter{border:1px solid var(--border-strong);background:var(--surface);border-radius:var(--r-pill);padding:7px 14px;font-size:14px;font-weight:500;cursor:pointer;transition:all .15s}
+.filter:hover{border-color:var(--primary);color:var(--primary)}
+.filter[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#0a1422}
+.diag{display:flex;flex-direction:column;gap:12px}
+.tag{display:inline-flex;align-self:flex-start;font-size:12px;font-weight:600;padding:3px 10px;border-radius:var(--r-pill);background:var(--bg-tint);color:var(--primary)}
+.diag .q{font-family:var(--font-display);font-size:19px;font-weight:400;color:var(--ink);line-height:1.3}
+.kv{display:grid;gap:8px;border-top:1px solid var(--border);padding-top:12px;font-size:14.5px}
+.kv div{display:grid;grid-template-columns:96px 1fr;gap:8px}
+.kv dt{color:var(--fg-subtle);font-size:12px;text-transform:uppercase;letter-spacing:.05em;font-weight:600;padding-top:2px}
+.kv dd{margin:0}
+.tip{display:flex;gap:12px;background:var(--bg-tint);border-radius:var(--r);padding:14px 16px;font-size:15px;color:var(--fg)}
+.tip b{color:var(--primary)}
+
+/* Stepper */
+.stepper{display:grid;gap:20px}
+@media(min-width:760px){.stepper{grid-template-columns:280px minmax(0,1fr)}}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;counter-reset:s}
+.steps button{width:100%;text-align:left;display:flex;align-items:center;gap:12px;border:0;background:transparent;padding:10px 12px;border-radius:var(--r);cursor:pointer;font-size:15px;font-weight:500;color:var(--fg-muted);transition:background .15s,color .15s}
+.steps button:hover{background:var(--bg-subtle);color:var(--ink)}
+.steps .num{flex:none;width:28px;height:28px;border-radius:var(--r-pill);border:1.5px solid var(--border-strong);display:grid;place-items:center;font-family:var(--font-data);font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+.steps button[aria-selected="true"]{background:var(--bg-tint);color:var(--ink);font-weight:600}
+.steps button[aria-selected="true"] .num{background:var(--gold);border-color:var(--gold);color:#0a1422}
+.steps button.done .num{border-color:var(--primary);color:var(--primary)}
+.step-panel{display:flex;flex-direction:column;gap:16px;padding:24px;min-width:0}
+.step-panel .count{font-family:var(--font-data);font-size:13px;color:var(--fg-subtle)}
+.step-panel h3{font-size:28px;font-weight:400}
+.step-panel p{font-size:16.5px;max-width:60ch}
+.say{border-left:3px solid var(--gold);padding:10px 14px;background:var(--bg-subtle);border-radius:0 var(--r) var(--r) 0;font-size:15.5px}
+.say small{display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-subtle);margin-bottom:2px}
+.step-nav{display:flex;gap:8px;margin-top:auto;padding-top:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;border-radius:var(--r-pill);padding:10px 16px;font-weight:600;font-size:14.5px;cursor:pointer;border:1px solid var(--border-strong);background:var(--surface);transition:all .15s}
+.btn:hover{background:var(--bg-subtle)}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#0a1422}
+.btn.primary:hover{background:#e6c27a;border-color:#e6c27a}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.extra h3{font-family:var(--font-body);font-size:16px;font-weight:600;margin-bottom:6px}
+.extra p{font-size:14.5px;color:var(--fg-muted)}
+
+/* Scripts */
+.script{display:flex;flex-direction:column;gap:12px}
+.script .moment{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-subtle)}
+.script blockquote{margin:0;font-size:16px;color:var(--ink);line-height:1.5;flex:1}
+.copy{align-self:flex-start;border:0;background:transparent;color:var(--primary);font-weight:600;font-size:13.5px;padding:4px 0;cursor:pointer}
+.copy:hover{text-decoration:underline}
+.avoid{display:flex;flex-direction:column;gap:8px;background:var(--danger-bg);border-radius:var(--r);padding:16px}
+.avoid b{color:var(--danger)}
+.avoid ul{margin:0;padding-left:20px;font-size:15px}
+
+/* Objeções */
+.obj-list{display:flex;flex-direction:column;gap:10px}
+.obj{border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
+.obj summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:var(--font-display);font-size:20px;font-weight:400;color:var(--ink)}
+.obj summary::-webkit-details-marker{display:none}
+.obj summary .hint{font-family:var(--font-body);font-size:13px;font-weight:500;color:var(--primary);white-space:nowrap}
+.obj[open] summary .hint .a{display:none}
+.obj:not([open]) summary .hint .b{display:none}
+.obj .ans{padding:0 20px 20px;display:grid;gap:10px}
+.steps3{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))}
+.steps3 div{background:var(--bg-subtle);border-radius:var(--r);padding:10px 12px;font-size:14.5px}
+.steps3 small{display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--primary);margin-bottom:2px}
+.cao{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cao span{background:var(--bg-tint);color:var(--primary);font-weight:600;font-size:14px;padding:6px 12px;border-radius:var(--r-pill)}
+.cao i{font-style:normal;color:var(--fg-subtle)}
+.warn{display:flex;gap:10px;background:var(--warning-bg);color:var(--fg);border-radius:var(--r);padding:14px 16px;font-size:15px}
+.warn b{color:var(--warning)}
+
+/* Exposição */
+.cols{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.cols .card h3{font-size:22px;font-weight:400;margin-bottom:12px}
+.cols ul{margin:0;padding-left:18px;display:grid;gap:8px;font-size:15px}
+.kit{display:grid;gap:4px;padding:12px;border:1px solid var(--border);border-radius:var(--r);margin-bottom:8px}
+.kit b{font-family:var(--font-display);font-weight:500;font-size:17px;color:var(--ink)}
+.kit span{font-size:14px;color:var(--fg-muted)}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0;position:relative}
+.timeline li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding-bottom:16px;position:relative}
+.timeline li::before{content:"";position:absolute;left:103px;top:8px;bottom:-4px;width:1px;background:var(--border-strong)}
+.timeline li:last-child::before{display:none}
+.timeline .when{font-family:var(--font-data);font-size:12.5px;font-weight:600;color:var(--primary);text-align:right;padding-top:2px}
+.timeline .what{padding-left:16px;position:relative;font-size:15px}
+.timeline .what::before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px var(--surface)}
+
+/* Exercícios */
+.ex{display:flex;flex-direction:column;gap:8px}
+.ex .meta{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.ex h3{font-family:var(--font-body);font-size:17px;font-weight:600}
+.ex .min{font-family:var(--font-data);font-size:12px;color:var(--fg-subtle);white-space:nowrap}
+.ex p{font-size:15px;color:var(--fg-muted)}
+.ex .goal{font-size:13.5px;color:var(--fg)}
+.ex .goal b{color:var(--primary)}
+.check-card{display:grid;gap:20px}
+@media(min-width:760px){.check-card{grid-template-columns:minmax(0,1fr) 220px;align-items:start}}
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.checklist label{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:var(--r);cursor:pointer;font-size:15.5px;transition:background .15s}
+.checklist label:hover{background:var(--bg-subtle)}
+.checklist input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--gold);flex:none}
+.checklist input:checked + span{color:var(--fg-muted);text-decoration:line-through;text-decoration-color:var(--border-strong)}
+.score{background:var(--bg-tint);border-radius:var(--r-lg);padding:20px;display:flex;flex-direction:column;gap:10px}
+.score .big{font-family:var(--font-display);font-size:48px;font-weight:400;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.score .big small{font-size:20px;color:var(--fg-muted);font-weight:500}
+.bar{height:8px;border-radius:var(--r-pill);background:var(--border);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--gold-grad);width:0;transition:width .25s ease-out}
+.score .verdict{font-size:14.5px;font-weight:600}
+.score .btn{align-self:flex-start;padding:8px 12px;font-size:13.5px}
+
+/* Indicadores */
+.calc{display:grid;gap:20px}
+@media(min-width:860px){.calc{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}}
+.fields{display:grid;gap:14px}
+.field{display:grid;gap:6px}
+.field label{font-size:14px;font-weight:500}
+.field input{font:500 16px/1.2 var(--font-data);font-variant-numeric:tabular-nums;padding:11px 12px;border-radius:var(--r);border:1px solid var(--border-strong);background:var(--surface);color:var(--fg);width:100%}
+.field input:focus{border-color:var(--primary);outline:none;box-shadow:0 0 0 3px var(--bg-tint)}
+.sample{font-size:13px;color:var(--fg-subtle)}
+.kpis{display:grid;gap:12px}
+.kpi{display:grid;gap:4px;padding:18px 20px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow)}
+.kpi .k{font-size:13px;font-weight:600;color:var(--fg-muted);letter-spacing:.02em}
+.kpi .v{font-family:var(--font-display);font-size:36px;font-weight:400;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.15}
+.kpi .f{font-family:var(--font-data);font-size:12.5px;color:var(--fg-subtle)}
+.kpi .use{font-size:14px;color:var(--fg)}
+.habits{margin:0;padding-left:20px;display:grid;gap:8px;font-size:15.5px;max-width:70ch}
+
+
+/* Celular: uma seção por vez, navegação por chips e botões */
+.pager{display:none}
+@media(max-width:959px){
+  html.paged main > section{display:none}
+  html.paged main > section.current{display:flex}
+  html.paged main > section.hero.current{display:grid}
+  html.paged main{gap:0;padding-block:16px 40px}
+  .pager{display:flex;justify-content:space-between;gap:10px;margin-top:8px;padding-top:20px;border-top:1px solid var(--border)}
+  .pager .btn{padding:12px 16px;font-size:14px;max-width:49%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hero .pager{border-top-color:rgba(215,171,92,.35)}
+  .hero .pager .btn:not(.primary){background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
+  .hero{padding:26px 20px;gap:22px}
+  .hero-logo .word{width:110px}
+  .hero::after{width:220px;right:-70px;top:-50px}
+  .hero p.lead{font-size:16px}
+  .sec{gap:20px}
+  .topbar{padding:10px 16px 12px;gap:10px}
+  .topbar .brand-mark{width:32px;height:32px;padding:6px}
+  .chips a{padding:8px 14px;font-size:13.5px}
+  /* Etapas: números em linha, painel logo abaixo */
+  .steps{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .steps li{flex:1 1 0;min-width:0}
+  .steps button{justify-content:center;padding:6px 0;font-size:0;gap:0}
+  .steps .num{width:34px;height:34px;font-size:14px}
+  .step-panel{padding:20px}
+  .step-panel h3{font-size:24px}
+  .step-nav .btn{flex:1;justify-content:center;white-space:nowrap}
+  /* Listas longas viram carrossel lateral */
+  .carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-16px;padding:2px 16px 10px;scrollbar-width:none}
+  .carousel::-webkit-scrollbar{display:none}
+  .carousel > *{flex:0 0 84%;scroll-snap-align:center}
+  .swipe{font-size:12.5px;color:var(--fg-subtle);margin-top:-8px}
+  .timeline li{grid-template-columns:1fr;gap:2px;padding-left:18px}
+  .timeline li::before{left:4px;top:10px}
+  .timeline .when{text-align:left}
+  .timeline .what{padding-left:0}
+  .timeline .what::before{left:-18px;top:-14px}
+  .check-card{padding:16px}
+  .checklist label{padding:10px 6px}
+  .kpi .v{font-size:30px}
+}
+@media(min-width:960px){.swipe{display:none}}
+footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);padding-top:20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+
+</head>
+<body>
+<div class="topbar">
+  <div class="brand"><div class="brand-mark" aria-hidden="true"><span class="sym"></span></div><div class="brand-name"><span class="word" role="img" aria-label="Podium"></span><small>Playbook de vendas</small></div></div>
+  <nav class="chips" aria-label="Seções">
+    <a href="#inicio">Início</a><a href="#mentalidade">Mentalidade</a><a href="#diagnostico">Diagnóstico</a><a href="#atendimento">Atendimento</a><a href="#scripts">Scripts</a><a href="#objecoes">Objeções</a><a href="#exposicao">Exposição e pós-venda</a><a href="#exercicios">Exercícios</a><a href="#indicadores">Indicadores</a>
+  </nav>
+</div>
+
+<div class="shell">
+  <aside class="side">
+    <div class="brand"><div class="brand-mark" aria-hidden="true"><span class="sym"></span></div><div class="brand-name"><span class="word" role="img" aria-label="Podium"></span><small>Playbook de vendas</small></div></div>
+    <ul class="nav">
+      <li><a href="#inicio"><span class="n">00</span>Como usar</a></li>
+      <li><a href="#mentalidade"><span class="n">01</span>Mentalidade</a></li>
+      <li><a href="#diagnostico"><span class="n">02</span>Diagnóstico na cadeira</a></li>
+      <li><a href="#atendimento"><span class="n">03</span>Atendimento passo a passo</a></li>
+      <li><a href="#scripts"><span class="n">04</span>Scripts prontos</a></li>
+      <li><a href="#objecoes"><span class="n">05</span>Objeções</a></li>
+      <li><a href="#exposicao"><span class="n">06</span>Exposição, kits e pós-venda</a></li>
+      <li><a href="#exercicios"><span class="n">07</span>Exercícios de aula</a></li>
+      <li><a href="#indicadores"><span class="n">08</span>Metas e indicadores</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero" style="--m:var(--sym-m)">
+      <div class="hero-logo"><span class="sym" aria-hidden="true"></span><span class="word" role="img" aria-label="Podium"></span></div>
+      <span class="eyebrow">Podium Educação · Material de aula</span>
+      <h1>Vender produto é <em>continuar o atendimento em casa</em></h1>
+      <p class="lead">Técnicas práticas para o barbeiro indicar pomada, óleo, shampoo, balm e kits sem parecer vendedor. Cada técnica cabe num atendimento normal e pode ser treinada em sala: apresente, mostre o script, faça o role-play e avalie com o checklist.</p>
+      <div class="formula" aria-label="Fórmula da indicação">
+        <div class="term"><b>Dor</b><span>o que ele contou</span></div><span class="op">+</span>
+        <div class="term"><b>Produto</b><span>um só, o mais relevante</span></div><span class="op">+</span>
+        <div class="term"><b>Benefício</b><span>o resultado no espelho</span></div><span class="op">+</span>
+        <div class="term last"><b>Pergunta</b><span>fechamento claro</span></div>
+      </div>
+      <div class="golden"><span><strong>Regra de ouro:</strong> só indique o que o cliente precisa e o que você mesmo usou no atendimento.</span></div>
+    </section>
+
+    <!-- 01 MENTALIDADE -->
+    <section id="mentalidade" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">01 · Mentalidade</span>
+        <h2>Indicar é cuidar</h2>
+        <p>O cliente confia no barbeiro como especialista. O corte dura semanas, mas o resultado de todo dia depende do que ele usa no espelho.</p>
+      </div>
+      <div class="grid carousel">
+        <div class="card principle"><h3>Consultor, não vendedor</h3><p>Você recomenda, o cliente decide. Nunca pressione.</p></div>
+        <div class="card principle"><h3>O resultado vende</h3><p>Se o cliente sai satisfeito com o acabamento, ele quer repetir em casa.</p></div>
+        <div class="card principle"><h3>Uma indicação por atendimento</h3><p>Escolha o produto mais relevante. Listar cinco produtos confunde e afasta.</p></div>
+        <div class="card principle"><h3>Benefício, não fórmula</h3><p>Fale do que o cliente vai ver.</p><span class="quote">"Segura o topete o dia todo sem brilho" vende mais que "pomada base água fixação 4".</span></div>
+        <div class="card principle"><h3>"Não" hoje não é "não" sempre</h3><p>Quem não compra agora costuma comprar no retorno, se a indicação foi bem feita.</p></div>
+      </div>
+    </section>
+
+    <!-- 02 DIAGNÓSTICO -->
+    <section id="diagnostico" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">02 · Diagnóstico na cadeira</span>
+        <h2>A venda começa nos primeiros 2 minutos</h2>
+        <p>Quem pergunta bem não precisa convencer: o cliente conta o que precisa. Filtre por área para ver as perguntas de consulta.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar por área">
+        <button class="filter" data-f="all" aria-pressed="true">Todas</button>
+        <button class="filter" data-f="Cabelo" aria-pressed="false">Cabelo</button>
+        <button class="filter" data-f="Barba" aria-pressed="false">Barba</button>
+        <button class="filter" data-f="Pele" aria-pressed="false">Pele</button>
+        <button class="filter" data-f="Rotina" aria-pressed="false">Rotina</button>
+      </div>
+      <div class="grid carousel" id="diag-grid"></div><span class="swipe">Arraste para o lado para ver mais perguntas</span>
+      <div class="tip"><span><b>Dica de aula:</b> o aluno guarda a dor principal e repete com as palavras do cliente na hora de indicar: "você comentou que o topete não para...".</span></div>
+    </section>
+
+    <!-- 03 ATENDIMENTO -->
+    <section id="atendimento" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">03 · Atendimento passo a passo</span>
+        <h2>O produto entra no serviço, não depois dele</h2>
+        <p>Siga esta sequência em todo atendimento. Clique em cada etapa para ver o que fazer e o que falar.</p>
+      </div>
+      <div class="stepper">
+        <ol class="steps" role="tablist" aria-label="Etapas do atendimento" id="steps"></ol>
+        <div class="card step-panel" role="tabpanel" id="step-panel" aria-live="polite"></div>
+      </div>
+      <h3 class="sub">Outras técnicas que funcionam</h3>
+      <div class="grid carousel">
+        <div class="card extra"><h3>Rendimento em reais</h3><p>"Esse pote dura uns 3 meses, dá menos de R$ 1 por dia."</p></div>
+        <div class="card extra"><h3>Comparação com o serviço</h3><p>"É o que faz seu corte durar bonito até a próxima visita."</p></div>
+        <div class="card extra"><h3>Prova social real</h3><p>"É o que mais sai aqui pra quem tem cabelo grosso como o seu." Só se for verdade.</p></div>
+        <div class="card extra"><h3>Amostra ou dose teste</h3><p>Para produtos novos, entregue uma amostra e pergunte no retorno.</p></div>
+      </div>
+    </section>
+
+    <!-- 04 SCRIPTS -->
+    <section id="scripts" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">04 · Scripts prontos</span>
+        <h2>Frases para abrir a indicação e fechar a venda</h2>
+        <p>Todas seguem a fórmula dor + produto + benefício + pergunta. Adapte as palavras ao seu jeito de falar.</p>
+      </div>
+      <div class="grid carousel" id="script-grid"></div><span class="swipe">Arraste para o lado para ver todas as frases</span>
+      <div class="avoid">
+        <b>Evite</b>
+        <ul>
+          <li>"Quer comprar alguma coisa?"</li>
+          <li>"Tá em promoção" como primeira frase</li>
+          <li>Indicar sem ter usado o produto no cliente</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 05 OBJEÇÕES -->
+    <section id="objecoes" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">05 · Objeções</span>
+        <h2>Objeção é dúvida, não recusa</h2>
+        <p>Valide o que o cliente disse, dê um motivo concreto e ofereça uma saída fácil. Em aula, peça para o aluno responder antes de abrir o cartão.</p>
+      </div>
+      <div class="cao" aria-label="Técnica"><span>Concordar</span><i>→</i><span>Explicar</span><i>→</i><span>Oferecer</span></div>
+      <div class="obj-list" id="obj-list"></div>
+      <div class="warn"><span><b>Limite:</b> depois de responder uma objeção, se o cliente disser não de novo, encerre com simpatia. Insistir queima a confiança e a próxima venda.</span></div>
+    </section>
+
+    <!-- 06 EXPOSIÇÃO -->
+    <section id="exposicao" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">06 · Exposição, kits e pós-venda</span>
+        <h2>Visto, tocado e lembrado depois que ele vai embora</h2>
+      </div>
+      <div class="cols">
+        <div class="card">
+          <h3>Exposição na barbearia</h3>
+          <ul>
+            <li>Na bancada de cada barbeiro, os 3 produtos que ele mais usa, à vista do cliente.</li>
+            <li>Vitrine perto do caixa e da espera, na altura dos olhos, com preço visível.</li>
+            <li>Testers abertos para o cliente cheirar e experimentar enquanto espera.</li>
+            <li>Placa curta por produto: para quem é e o que resolve ("cabelo grosso que não para").</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Kits por perfil</h3>
+          <div class="kit"><b>Barba completa</b><span>Shampoo de barba + óleo + balm</span></div>
+          <div class="kit"><b>Topete do dia a dia</b><span>Shampoo + pomada</span></div>
+          <ul>
+            <li>Ofereça o kit quando o cliente já aceitou um produto: o desconto do conjunto é o argumento.</li>
+            <li>Datas fortes: Dia dos Pais, Natal, aniversário do cliente.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Régua de pós-venda</h3>
+          <ol class="timeline">
+            <li><span class="when">Na compra</span><span class="what">Anote na ficha do cliente o produto e a data.</span></li>
+            <li><span class="when">3 a 5 dias</span><span class="what">WhatsApp: "E a pomada, tá conseguindo modelar?"</span></li>
+            <li><span class="when">No retorno</span><span class="what">Pergunte sobre o produto antes de começar o corte.</span></li>
+            <li><span class="when">60 a 90 dias</span><span class="what">Avise que a pomada deve estar acabando e ofereça reposição.</span></li>
+            <li><span class="when">Agendamento</span><span class="what">Se ele pedir, deixe o produto separado para a próxima visita.</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 EXERCÍCIOS -->
+    <section id="exercicios" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">07 · Exercícios de aula</span>
+        <h2>Treino em trios: barbeiro, cliente e observador</h2>
+        <p>Cada exercício leva de 10 a 20 minutos. Troquem de papel a cada rodada.</p>
+      </div>
+      <div class="grid carousel">
+        <div class="card ex"><div class="meta"><h3>Diagnóstico em 2 minutos</h3><span class="min">10 min</span></div><p>O "cliente" recebe um cartão com uma dor secreta. O barbeiro precisa descobri-la só com perguntas.</p><span class="goal"><b>Objetivo:</b> treinar perguntas de consulta</span></div>
+        <div class="card ex"><div class="meta"><h3>Método em voz alta</h3><span class="min">10 min</span></div><p>Na finalização real ou no manequim, o aluno narra cada passo da aplicação do produto.</p><span class="goal"><b>Objetivo:</b> ensinar o cliente a usar</span></div>
+        <div class="card ex"><div class="meta"><h3>Cartão de objeção</h3><span class="min">15 min</span></div><p>O cliente tira um cartão ("tá caro", "vou pensar"...) e o barbeiro responde na hora.</p><span class="goal"><b>Objetivo:</b> responder sem travar nem insistir</span></div>
+        <div class="card ex"><div class="meta"><h3>Uma indicação só</h3><span class="min">10 min</span></div><p>Com 5 produtos na bancada, o aluno escolhe apenas um e justifica pela dor do cliente.</p><span class="goal"><b>Objetivo:</b> foco e relevância</span></div>
+        <div class="card ex"><div class="meta"><h3>Atendimento completo</h3><span class="min">20 min</span></div><p>Simulação do início ao caixa, com o observador preenchendo o checklist abaixo.</p><span class="goal"><b>Objetivo:</b> juntar todas as etapas</span></div>
+      </div>
+      <div class="card check-card">
+        <div>
+          <h3 class="sub" style="margin-bottom:12px">Checklist do observador</h3>
+          <ul class="checklist" id="checklist"></ul>
+        </div>
+        <div class="score" aria-live="polite">
+          <span class="eyebrow">Pontuação</span>
+          <div class="big" id="score-num">0<small>/8</small></div>
+          <div class="bar"><i id="score-bar"></i></div>
+          <span class="verdict" id="score-verdict">Marque o que o aluno fez.</span>
+          <button class="btn" id="reset" type="button">Nova avaliação</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 INDICADORES -->
+    <section id="indicadores" class="sec">
+      <div class="sec-head">
+        <span class="eyebrow">08 · Metas e indicadores</span>
+        <h2>Três números por barbeiro, toda semana</h2>
+        <p>Preencha com os dados da semana e veja os indicadores na hora. Os valores abaixo são um exemplo.</p>
+      </div>
+      <div class="calc">
+        <div class="card fields">
+          <div class="field"><label for="i-atend">Atendimentos na semana</label><input id="i-atend" type="number" min="0" inputmode="numeric" value="60"></div>
+          <div class="field"><label for="i-vendas">Atendimentos com venda de produto</label><input id="i-vendas" type="number" min="0" inputmode="numeric" value="12"></div>
+          <div class="field"><label for="i-fat">Faturamento total, serviço + produto (R$)</label><input id="i-fat" type="number" min="0" inputmode="decimal" value="4500"></div>
+          <div class="field"><label for="i-comp">Clientes que compraram produto (últimos 90 dias)</label><input id="i-comp" type="number" min="0" inputmode="numeric" value="30"></div>
+          <div class="field"><label for="i-recomp">Desses, quantos compraram de novo</label><input id="i-recomp" type="number" min="0" inputmode="numeric" value="9"></div>
+          <span class="sample">Valores de exemplo. Substitua pelos números da sua barbearia.</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><span class="k">Taxa de conversão</span><span class="v" id="o-conv">–</span><span class="f">com venda ÷ atendimentos</span><span class="use">Mostra se a indicação está acontecendo e convencendo.</span></div>
+          <div class="kpi"><span class="k">Ticket médio</span><span class="v" id="o-ticket">–</span><span class="f">faturamento ÷ atendimentos</span><span class="use">Mostra quanto o produto soma a cada cliente.</span></div>
+          <div class="kpi"><span class="k">Taxa de recompra (90 dias)</span><span class="v" id="o-rec">–</span><span class="f">recompraram ÷ compraram</span><span class="use">Mostra se o produto e o pós-venda geram fidelidade.</span></div>
+        </div>
+      </div>
+      <ul class="habits">
+        <li>Defina a meta inicial a partir da média atual da barbearia e suba aos poucos.</li>
+        <li>Reconheça quem mais indicou, não só quem mais vendeu: indicação é o hábito que gera venda.</li>
+        <li>Revise os números numa reunião rápida semanal e escolha uma técnica deste playbook para treinar na semana seguinte.</li>
+      </ul>
+    </section>
+
+    <footer>Podium Educação · Playbook de vendas de produtos para barbeiros · 2026</footer>
+  </main>
+</div>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const store = {
+    get(k){ try { return JSON.parse(localStorage.getItem(k)); } catch(e){ return null; } },
+    set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+  };
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  /* Diagnóstico */
+  const diag = [
+    {a:'Cabelo', q:'"Como você arruma o cabelo no dia a dia?"', s:'"Só passo a mão" / "não para no lugar"', p:'Pomada, cera, pó modelador'},
+    {a:'Cabelo', q:'"Ele fica oleoso ou ressecado no fim do dia?"', s:'Oleosidade, frizz, caspa', p:'Shampoo específico, tônico'},
+    {a:'Barba', q:'"Sua barba coça ou fica armada?"', s:'Coceira, fios rebeldes, falhas', p:'Óleo, balm, minoxidil (com orientação)'},
+    {a:'Pele', q:'"Costuma ter irritação depois de barbear?"', s:'Vermelhidão, pelos encravados', p:'Pós-barba, esfoliante'},
+    {a:'Rotina', q:'"Quanto tempo você tem de manhã pra se arrumar?"', s:'Pouco tempo', p:'Produto de 1 passo, kit prático'}
+  ];
+  const dg = $('#diag-grid');
+  function renderDiag(f){
+    dg.innerHTML = diag.filter(d => f==='all' || d.a===f).map(d =>
+      `<div class="card diag"><span class="tag">${d.a}</span><p class="q">${esc(d.q)}</p>
+       <dl class="kv"><div><dt>Sinal</dt><dd>${esc(d.s)}</dd></div><div><dt>Indicar</dt><dd>${esc(d.p)}</dd></div></dl></div>`).join('');
+  }
+  document.querySelectorAll('.filter').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.filter').forEach(x => x.setAttribute('aria-pressed', x===b ? 'true':'false'));
+    renderDiag(b.dataset.f);
+  }));
+  renderDiag('all');
+
+  /* Stepper */
+  const steps = [
+    {t:'Diagnosticar', d:'Faça as perguntas de consulta antes de começar o corte. Guarde a dor principal que o cliente contar.', say:'"Como você arruma o cabelo no dia a dia?"'},
+    {t:'Usar no cliente', d:'Aplique o produto que você vai indicar na finalização, sempre com o cliente vendo.', say:'"Vou finalizar com uma pomada que resolve isso que você comentou."'},
+    {t:'Narrar enquanto aplica', d:'Use o método em voz alta: explique quantidade, modo e momento enquanto aplica.', say:'"Tô usando pouca quantidade, do tamanho de uma ervilha. Espalho na palma e entro de trás pra frente."'},
+    {t:'Colocar na mão dele', d:'Deixe o cliente cheirar, sentir a textura e ler a embalagem. Quem segura o produto tem mais chance de levar.', say:'"Sente a textura, ela não fica grudando."'},
+    {t:'Deixar ele finalizar uma parte', d:'Peça para ele mesmo modelar a franja ou passar o óleo em um lado da barba. Ele aprende e percebe que consegue repetir em casa.', say:'"Faz você esse lado agora, do jeito que te mostrei."'},
+    {t:'Mostrar o resultado no espelho', d:'Ligue o resultado que ele está vendo ao produto que acabou de usar.', say:'"Olha como ficou sem brilho e com movimento. É isso que essa pomada entrega."'},
+    {t:'Fazer a indicação', d:'Uma recomendação clara, ligada à dor que ele contou, terminando com uma pergunta de fechamento.', say:'"Essa aqui segura o dia inteiro e sai fácil no banho. Quer levar pra manter assim em casa?"'},
+    {t:'Entregar no caixa', d:'Leve o produto até o caixa junto com o cliente. Não deixe para ele ter que pedir.', say:'"Já deixei separado aqui pra você."'}
+  ];
+  const ol = $('#steps'), panel = $('#step-panel');
+  let cur = 0;
+  ol.innerHTML = steps.map((s,i) => `<li><button role="tab" id="tab-${i}" aria-controls="step-panel" data-i="${i}"><span class="num">${i+1}</span>${s.t}</button></li>`).join('');
+  function showStep(i){
+    cur = i;
+    ol.querySelectorAll('button').forEach((b,j) => { b.setAttribute('aria-selected', j===i ? 'true':'false'); b.classList.toggle('done', j<i); b.tabIndex = j===i ? 0 : -1; });
+    const s = steps[i];
+    panel.setAttribute('aria-labelledby','tab-'+i);
+    panel.innerHTML = `<span class="count">Etapa ${i+1} de ${steps.length}</span><h3>${s.t}</h3><p>${esc(s.d)}</p>
+      <div class="say"><small>Como falar</small>${esc(s.say)}</div>
+      <div class="step-nav"><button class="btn" id="prev" ${i===0?'disabled':''}>Anterior</button><button class="btn primary" id="next" ${i===steps.length-1?'disabled':''}>Próxima etapa</button></div>`;
+    $('#prev').onclick = () => showStep(Math.max(0,cur-1));
+    $('#next').onclick = () => showStep(Math.min(steps.length-1,cur+1));
+  }
+  ol.addEventListener('click', e => { const b = e.target.closest('button'); if(b) showStep(+b.dataset.i); });
+  ol.addEventListener('keydown', e => {
+    if(e.key==='ArrowDown'||e.key==='ArrowRight'){ e.preventDefault(); showStep(Math.min(steps.length-1,cur+1)); ol.querySelectorAll('button')[cur].focus(); }
+    if(e.key==='ArrowUp'||e.key==='ArrowLeft'){ e.preventDefault(); showStep(Math.max(0,cur-1)); ol.querySelectorAll('button')[cur].focus(); }
+  });
+  showStep(0);
+
+  /* Scripts */
+  const scripts = [
+    ['Abrir a indicação','Você comentou que o cabelo não para no lugar. Vou finalizar com uma pomada que resolve isso, olha só.'],
+    ['Pomada','Essa aqui segura o dia inteiro e sai fácil no banho. Quer levar pra manter assim em casa?'],
+    ['Óleo de barba','A coceira vem da pele ressecada embaixo da barba. Duas gotas desse óleo depois do banho resolvem. Separo um pra você?'],
+    ['Shampoo','Shampoo comum resseca o fio. Esse é próprio pro seu tipo de cabelo e você vai sentir a diferença na primeira semana.'],
+    ['Pós-barba','Pra não ficar vermelho amanhã, passa isso depois de barbear em casa também.'],
+    ['Kit','Como você usa pomada e óleo, o kit sai mais em conta do que os dois separados.'],
+    ['Fechamento alternativo','Prefere o pote de 50 g ou o de 120 g, que rende o dobro?'],
+    ['Cliente que já compra','Seu óleo deve estar acabando, já quer repor hoje?']
+  ];
+  $('#script-grid').innerHTML = scripts.map((s,i) => `<div class="card script"><span class="moment">${s[0]}</span><blockquote id="sc-${i}">"${esc(s[1])}"</blockquote><button class="copy" data-i="${i}" type="button">Copiar frase</button></div>`).join('');
+  $('#script-grid').addEventListener('click', e => {
+    const b = e.target.closest('.copy'); if(!b) return;
+    const text = scripts[+b.dataset.i][1];
+    const done = () => { b.textContent = 'Copiada'; setTimeout(() => b.textContent = 'Copiar frase', 1600); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents($('#sc-'+b.dataset.i)); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); b.textContent = 'Selecionada, use Ctrl+C'; setTimeout(() => b.textContent = 'Copiar frase', 2200); };
+    try { navigator.clipboard.writeText(text).then(done, fallback); } catch(err){ fallback(); }
+  });
+
+  /* Objeções */
+  const objs = [
+    ['"Tá caro"','Entendo.','Esse pote rende uns 3 meses, sai menos de R$ 1 por dia.','E tem o tamanho menor pra você testar.'],
+    ['"Já tenho em casa"','Boa! Qual você usa? (ouça a resposta)','Se estiver funcionando, ótimo. Se o cabelo cair no meio do dia, esse aqui segura mais.','Quer sentir a diferença na próxima finalização?'],
+    ['"Vou pensar"','Tranquilo.','Pra você não esquecer qual é o produto…','Vou anotar e te mando a foto no WhatsApp.'],
+    ['"Compro no mercado"','Mercado tem opções boas pro básico.','Esse é profissional, o mesmo que eu usei hoje.','O resultado no espelho é esse. Quer levar pra testar?'],
+    ['"Não sei usar"','É normal no começo.','Por isso deixei você finalizar a franja.','É exatamente isso que você vai fazer em casa.'],
+    ['"Agora não dá"','Sem problema.','O produto continua aqui.','Separo pra você pegar no próximo corte?']
+  ];
+  $('#obj-list').innerHTML = objs.map(o => `<details class="obj"><summary>${esc(o[0])}<span class="hint"><span class="a">Ver resposta</span><span class="b">Fechar</span></span></summary>
+    <div class="ans"><div class="steps3"><div><small>Concordar</small>${esc(o[1])}</div><div><small>Explicar</small>${esc(o[2])}</div><div><small>Oferecer</small>${esc(o[3])}</div></div></div></details>`).join('');
+
+  /* Checklist */
+  const items = ['Fez pelo menos 2 perguntas de diagnóstico antes do corte','Usou o produto no cliente durante a finalização','Explicou como usar (quantidade, modo, momento)','Colocou o produto na mão do cliente','Ligou a indicação à dor que o cliente contou','Fez uma pergunta de fechamento clara','Respondeu a objeção sem pressionar','Combinou um próximo passo (compra, amostra ou WhatsApp)'];
+  const saved = store.get('pb-check') || [];
+  $('#checklist').innerHTML = items.map((t,i) => `<li><label for="ck-${i}"><input type="checkbox" id="ck-${i}" ${saved[i]?'checked':''}><span>${t}</span></label></li>`).join('');
+  function score(){
+    const st = items.map((_,i) => $('#ck-'+i).checked);
+    const n = st.filter(Boolean).length;
+    $('#score-num').innerHTML = n + '<small>/8</small>';
+    $('#score-bar').style.width = (n/8*100) + '%';
+    $('#score-verdict').textContent = n===0 ? 'Marque o que o aluno fez.' : n<=3 ? 'Precisa treinar a sequência.' : n<=6 ? 'No caminho certo, falta pouco.' : 'Atendimento completo.';
+    store.set('pb-check', st);
+  }
+  $('#checklist').addEventListener('change', score);
+  $('#reset').addEventListener('click', () => { items.forEach((_,i) => $('#ck-'+i).checked = false); score(); });
+  score();
+
+  /* Indicadores */
+  const brl = new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+  const pct = v => (v*100).toLocaleString('pt-BR',{maximumFractionDigits:1}) + '%';
+  const num = id => parseFloat($(id).value) || 0;
+  function calc(){
+    const a = num('#i-atend'), v = num('#i-vendas'), f = num('#i-fat'), c = num('#i-comp'), r = num('#i-recomp');
+    $('#o-conv').textContent = a ? pct(v/a) : '–';
+    $('#o-ticket').textContent = a ? brl.format(f/a) : '–';
+    $('#o-rec').textContent = c ? pct(r/c) : '–';
+  }
+  document.querySelectorAll('.fields input').forEach(i => i.addEventListener('input', calc));
+  calc();
+
+  /* Navegação: no desktop rola a página; no celular mostra uma seção por vez */
+  const links = [...document.querySelectorAll('.nav a, .chips a')];
+  const secs = [...document.querySelectorAll('main > section')];
+  const chipsBar = document.querySelector('.chips');
+  const names = ['Início','Mentalidade','Diagnóstico','Atendimento','Scripts','Objeções','Exposição e pós-venda','Exercícios','Indicadores'];
+  const mq = window.matchMedia('(max-width: 959px)');
+  function mark(id){
+    links.forEach(l => l.classList.toggle('active', l.getAttribute('href')==='#'+id));
+    const chip = chipsBar.querySelector('a[href="#'+id+'"]');
+    if(chip){ const left = chip.offsetLeft - (chipsBar.clientWidth - chip.offsetWidth)/2; chipsBar.scrollTo({left: Math.max(0,left), behavior:'smooth'}); }
+  }
+  secs.forEach((sec,i) => {
+    const nav = document.createElement('div'); nav.className = 'pager';
+    nav.innerHTML = (i>0 ? `<button class="btn" type="button" data-go="${i-1}">‹ ${names[i-1]}</button>` : '<span></span>') +
+                    (i<secs.length-1 ? `<button class="btn primary" type="button" data-go="${i+1}">${names[i+1]} ›</button>` : '');
+    sec.appendChild(nav);
+  });
+  function show(id, scroll){
+    secs.forEach(s => s.classList.toggle('current', s.id===id));
+    mark(id);
+    if(scroll) window.scrollTo({top:0, behavior:'auto'});
+    try { history.replaceState(null,'','#'+id); } catch(e){}
+  }
+  function paged(){ return mq.matches; }
+  function applyMode(){
+    document.documentElement.classList.toggle('paged', paged());
+    if(paged()){ const h = (location.hash||'').slice(1); show(secs.some(s=>s.id===h) ? h : (secs.find(s=>s.classList.contains('current'))||secs[0]).id, false); }
+  }
+  links.forEach(l => l.addEventListener('click', e => { if(!paged()) return; e.preventDefault(); show(l.getAttribute('href').slice(1), true); }));
+  document.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if(!b) return; const id = secs[+b.dataset.go].id;
+    if(paged()) show(id, true); else document.getElementById(id).scrollIntoView({behavior:'smooth'}); });
+  (mq.addEventListener ? mq.addEventListener('change', applyMode) : mq.addListener(applyMode));
+  applyMode();
+  const io = new IntersectionObserver(es => { if(paged()) return; es.forEach(e => { if(e.isIntersecting) mark(e.target.id); }); }, {rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(s => io.observe(s));
+})();
+</script>
+
+</body>
+</html>
