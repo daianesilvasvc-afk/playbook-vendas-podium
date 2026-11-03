@@ -1,0 +1,8 @@
+name = "playbook-vendas-api"
+main = "src/index.js"
+compatibility_date = "2026-06-24"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "playbook_vendas_db"
+database_id = "a3178a7e-94d7-4990-942f-d4bef2feed12"

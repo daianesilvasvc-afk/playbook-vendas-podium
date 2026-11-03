@@ -1,9 +1,4 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<!doctype html><html lang="pt-BR"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Playbook de Vendas para Barbeiros</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -283,16 +278,52 @@ main{min-width:0;padding-inline:16px;padding-block:24px 80px;display:flex;flex-d
   .kpi .v{font-size:30px}
 }
 @media(min-width:960px){.swipe{display:none}}
+
+/* Salvar no histórico */
+.save-row{display:grid;gap:8px}
+.check-card .save-row{grid-column:1/-1;border-top:1px solid var(--border);padding-top:16px}
+.save-row label{font-size:14px;font-weight:500}
+.save-line{display:flex;gap:8px;flex-wrap:wrap}
+.save-line input{flex:1 1 200px;min-width:0;font:500 16px/1.2 var(--font-body);padding:11px 12px;border-radius:var(--r);border:1px solid var(--border-strong);background:var(--surface);color:var(--fg)}
+.save-line input:focus{border-color:var(--primary);outline:none;box-shadow:0 0 0 3px var(--bg-tint)}
+.save-msg{font-size:13.5px;min-height:1.2em}
+.save-msg.ok{color:var(--success)}
+.save-msg.err{color:var(--danger)}
+#save-ind{margin-top:4px}
+#save-ind .btn{justify-self:start}
+/* Nome de quem usa (GitHub Pages) */
+.who-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:520px;margin:0 auto;background:var(--surface);box-shadow:var(--shadow-lg);border-radius:var(--r-lg);padding:16px 18px;display:grid;gap:8px}
+.who-bar p{margin:0;font-size:14.5px}
+/* Painel de histórico */
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}
+.tile{background:var(--surface);box-shadow:var(--shadow);border-radius:var(--r-lg);padding:16px 18px;display:grid;gap:4px}
+.tile .k{font-size:12.5px;font-weight:600;color:var(--fg-muted)}
+.tile .v{font-family:var(--font-display);font-size:32px;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1}
+.hist-status{color:var(--fg-muted);font-size:14.5px}
+.hist-status:empty{display:none}
+.table-wrap{padding:0;overflow-x:auto}
+.htable{width:100%;border-collapse:collapse;font-size:14.5px;min-width:620px}
+.htable th{text-align:left;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--fg-subtle);padding:12px 14px;border-bottom:1px solid var(--border)}
+.htable td{padding:12px 14px;border-bottom:1px solid var(--border)}
+.htable .num{text-align:right;font-variant-numeric:tabular-nums}
+.htable .who{font-weight:600;color:var(--ink)}
+.hrow{cursor:pointer}
+.hrow:hover td{background:var(--bg-subtle)}
+.hrow[aria-expanded="true"] td{background:var(--bg-tint)}
+.hdetail td{background:var(--bg-subtle);padding:16px 14px}
+.hd-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.hd-grid h4{margin:0 0 6px;font-size:13px;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:.05em}
+.hd-grid ul{margin:0;padding-left:18px;display:grid;gap:4px;font-size:14px}
+.hd-empty,.hd-meta{font-size:13.5px;color:var(--fg-muted)}
+.hd-meta{margin-top:12px}
 footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);padding-top:20px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 </style>
 
-</head>
-<body>
 <div class="topbar">
   <div class="brand"><div class="brand-mark" aria-hidden="true"><span class="sym"></span></div><div class="brand-name"><span class="word" role="img" aria-label="Podium"></span><small>Playbook de vendas</small></div></div>
   <nav class="chips" aria-label="Seções">
-    <a href="#inicio">Início</a><a href="#mentalidade">Mentalidade</a><a href="#diagnostico">Diagnóstico</a><a href="#atendimento">Atendimento</a><a href="#scripts">Scripts</a><a href="#objecoes">Objeções</a><a href="#exposicao">Exposição e pós-venda</a><a href="#exercicios">Exercícios</a><a href="#indicadores">Indicadores</a>
+    <a href="#inicio">Início</a><a href="#mentalidade">Mentalidade</a><a href="#diagnostico">Diagnóstico</a><a href="#atendimento">Atendimento</a><a href="#scripts">Scripts</a><a href="#objecoes">Objeções</a><a href="#exposicao">Exposição e pós-venda</a><a href="#exercicios">Exercícios</a><a href="#indicadores">Indicadores</a><a href="#historico" id="chip-hist" hidden>Histórico</a>
   </nav>
 </div>
 
@@ -309,6 +340,7 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
       <li><a href="#exposicao"><span class="n">06</span>Exposição, kits e pós-venda</a></li>
       <li><a href="#exercicios"><span class="n">07</span>Exercícios de aula</a></li>
       <li><a href="#indicadores"><span class="n">08</span>Metas e indicadores</a></li>
+      <li id="nav-hist" hidden><a href="#historico"><span class="n">·</span>Histórico de uso</a></li>
     </ul>
   </aside>
 
@@ -476,6 +508,11 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
           <span class="verdict" id="score-verdict">Marque o que o aluno fez.</span>
           <button class="btn" id="reset" type="button">Nova avaliação</button>
         </div>
+        <div class="save-row" id="save-eval" hidden>
+          <label for="aluno">Aluno avaliado</label>
+          <div class="save-line"><input id="aluno" type="text" maxlength="80" autocomplete="off" placeholder="Nome do aluno"><button class="btn primary" id="btn-save-eval" type="button">Salvar avaliação</button></div>
+          <span class="save-msg" id="eval-msg" aria-live="polite"></span>
+        </div>
       </div>
     </section>
 
@@ -494,6 +531,7 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
           <div class="field"><label for="i-comp">Clientes que compraram produto (últimos 90 dias)</label><input id="i-comp" type="number" min="0" inputmode="numeric" value="30"></div>
           <div class="field"><label for="i-recomp">Desses, quantos compraram de novo</label><input id="i-recomp" type="number" min="0" inputmode="numeric" value="9"></div>
           <span class="sample">Valores de exemplo. Substitua pelos números da sua barbearia.</span>
+          <div class="save-row" id="save-ind" hidden><button class="btn primary" id="btn-save-ind" type="button">Salvar indicadores da semana</button><span class="save-msg" id="ind-msg" aria-live="polite"></span></div>
         </div>
         <div class="kpis">
           <div class="kpi"><span class="k">Taxa de conversão</span><span class="v" id="o-conv">–</span><span class="f">com venda ÷ atendimentos</span><span class="use">Mostra se a indicação está acontecendo e convencendo.</span></div>
@@ -506,6 +544,28 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
         <li>Reconheça quem mais indicou, não só quem mais vendeu: indicação é o hábito que gera venda.</li>
         <li>Revise os números numa reunião rápida semanal e escolha uma técnica deste playbook para treinar na semana seguinte.</li>
       </ul>
+    </section>
+
+    <!-- HISTÓRICO (só editores e dono) -->
+    <section id="historico" class="sec" hidden>
+      <div class="sec-head">
+        <span class="eyebrow">Histórico de uso · visível só no link de gestão</span>
+        <h2>Quem está usando o playbook</h2>
+        <p>Cada pessoa que abre a página fica registrada com os dias de uso, as seções vistas, as avaliações e os indicadores que salvou. Toque numa linha para ver os detalhes.</p>
+      </div>
+      <div class="tiles">
+        <div class="tile"><span class="k">Pessoas</span><span class="v" id="t-pessoas">–</span></div>
+        <div class="tile"><span class="k">Ativas nos últimos 7 dias</span><span class="v" id="t-ativos">–</span></div>
+        <div class="tile"><span class="k">Aberturas da página</span><span class="v" id="t-aberturas">–</span></div>
+        <div class="tile"><span class="k">Avaliações salvas</span><span class="v" id="t-aval">–</span></div>
+      </div>
+      <p class="hist-status" id="hist-status">Carregando histórico…</p>
+      <div class="table-wrap card">
+        <table class="htable">
+          <thead><tr><th>Pessoa</th><th>Último acesso</th><th class="num">Dias</th><th class="num">Aberturas</th><th class="num">Seções</th><th class="num">Avaliações</th></tr></thead>
+          <tbody id="hist-body"></tbody>
+        </table>
+      </div>
     </section>
 
     <footer>Podium Educação · Playbook de vendas de produtos para barbeiros · 2026</footer>
@@ -636,12 +696,14 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
 
   /* Navegação: no desktop rola a página; no celular mostra uma seção por vez */
   const links = [...document.querySelectorAll('.nav a, .chips a')];
-  const secs = [...document.querySelectorAll('main > section')];
+  const secs = [...document.querySelectorAll('main > section:not(#historico)')];
+  const allSecs = [...document.querySelectorAll('main > section')];
   const chipsBar = document.querySelector('.chips');
   const names = ['Início','Mentalidade','Diagnóstico','Atendimento','Scripts','Objeções','Exposição e pós-venda','Exercícios','Indicadores'];
   const mq = window.matchMedia('(max-width: 959px)');
   function mark(id){
     links.forEach(l => l.classList.toggle('active', l.getAttribute('href')==='#'+id));
+    document.dispatchEvent(new CustomEvent('pb:section',{detail:id}));
     const chip = chipsBar.querySelector('a[href="#'+id+'"]');
     if(chip){ const left = chip.offsetLeft - (chipsBar.clientWidth - chip.offsetWidth)/2; chipsBar.scrollTo({left: Math.max(0,left), behavior:'smooth'}); }
   }
@@ -652,7 +714,7 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
     sec.appendChild(nav);
   });
   function show(id, scroll){
-    secs.forEach(s => s.classList.toggle('current', s.id===id));
+    allSecs.forEach(s => s.classList.toggle('current', s.id===id));
     mark(id);
     if(scroll) window.scrollTo({top:0, behavior:'auto'});
     try { history.replaceState(null,'','#'+id); } catch(e){}
@@ -660,7 +722,7 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
   function paged(){ return mq.matches; }
   function applyMode(){
     document.documentElement.classList.toggle('paged', paged());
-    if(paged()){ const h = (location.hash||'').slice(1); show(secs.some(s=>s.id===h) ? h : (secs.find(s=>s.classList.contains('current'))||secs[0]).id, false); }
+    if(paged()){ const h = (location.hash||'').slice(1); show(allSecs.some(s=>s.id===h && !s.hidden) ? h : (allSecs.find(s=>s.classList.contains('current') && !s.hidden)||secs[0]).id, false); }
   }
   links.forEach(l => l.addEventListener('click', e => { if(!paged()) return; e.preventDefault(); show(l.getAttribute('href').slice(1), true); }));
   document.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if(!b) return; const id = secs[+b.dataset.go].id;
@@ -668,9 +730,232 @@ footer{color:var(--fg-subtle);font-size:13px;border-top:1px solid var(--border);
   (mq.addEventListener ? mq.addEventListener('change', applyMode) : mq.addListener(applyMode));
   applyMode();
   const io = new IntersectionObserver(es => { if(paged()) return; es.forEach(e => { if(e.isIntersecting) mark(e.target.id); }); }, {rootMargin:'-40% 0px -55% 0px'});
-  secs.forEach(s => io.observe(s));
+  allSecs.forEach(s => io.observe(s));
+  document.addEventListener('pb:admin', () => { if(paged() && (location.hash||'') === '#historico') show('historico', false); });
+})();
+</script>
+<script>
+/* Fora do Claude não existe window.claude: este adaptador imita db/user gravando no
+   Worker playbook-vendas-api (Cloudflare D1). Cada navegador tem um id próprio;
+   o painel de histórico aparece só com ?gestao na URL. */
+(function(){
+  if(window.claude && typeof window.claude.use === 'function') return;
+  const API = 'https://playbook-vendas-api.podium-playbook.workers.dev';
+  const ls = {
+    get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+    set(k,v){ try { localStorage.setItem(k, v); return true; } catch(e){ return false; } }
+  };
+  let uid = ls.get('pb-uid');
+  if(!uid){ uid = (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2)); if(!ls.set('pb-uid', uid)) uid = null; }
+  const nome = () => ls.get('pb-nome') || null;
+  const names = {};
+  const err = code => Object.assign(new Error(code), {code});
+  async function call(path, opts){
+    let r;
+    try { r = await fetch(API + path, opts); } catch(e){ throw err('unavailable'); }
+    if(r.status === 404) return null;
+    if(r.status >= 500) throw err('unavailable');
+    if(!r.ok) throw err('invalid_argument');
+    return r.json();
+  }
+  const db = {
+    doc(path){
+      const id = path.split('/')[1];
+      return {
+        async get(){ const r = await call('/uso/' + id); if(r) names[id] = r.nome; return {exists: !!r, data: () => r && r.dados}; },
+        set(dados){ return call('/uso/' + id, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({nome: nome(), dados})}); }
+      };
+    },
+    collection(){
+      return {
+        onSnapshot(cb, onErr){
+          const load = () => call('/uso').then(list => {
+            (list || []).forEach(r => { names[r.id] = r.nome; });
+            cb({metadata:{fromCache:false}, docs:(list || []).map(r => ({id:r.id, exists:true, data:() => r.dados}))});
+          }, e => onErr && onErr(e));
+          load(); const t = setInterval(load, 60000); return () => clearInterval(t);
+        }
+      };
+    }
+  };
+  const user = {
+    async id(){ return uid; },
+    async can(){ return uid != null; },
+    async canEdit(){ return new URLSearchParams(location.search).has('gestao'); },
+    async profiles(ids){ const o = {}; ids.forEach(id => { if(names[id]) o[id] = {name: names[id]}; }); return o; }
+  };
+  window.claude = {use: async k => k === 'db' ? db : k === 'user' ? user : null};
+
+  /* Pede o nome uma vez, para o histórico não virar uma lista de "Pessoa sem nome" */
+  if(!uid || nome()) return;
+  const bar = document.createElement('form'); bar.className = 'who-bar';
+  bar.innerHTML = '<p><strong>Como você se chama?</strong> Assim seu uso, avaliações e indicadores ficam salvos no seu nome.</p>' +
+    '<div class="save-line"><input id="pb-nome" maxlength="80" autocomplete="name" placeholder="Seu nome" aria-label="Seu nome" required>' +
+    '<button class="btn primary" type="submit">Salvar</button></div>';
+  bar.addEventListener('submit', e => {
+    e.preventDefault(); const v = bar.querySelector('input').value.trim(); if(!v) return;
+    ls.set('pb-nome', v.slice(0,80)); bar.remove();
+    call('/uso/' + uid).then(r => r && db.doc('uso/' + uid).set(r.dados)).catch(() => {});
+  });
+  document.body.appendChild(bar);
+})();
+</script>
+<script>
+/* Histórico de uso: cada pessoa grava o próprio resumo em uso/<id>; editores e dono veem todos. */
+(async function(){
+  const $ = s => document.querySelector(s);
+  if(!window.claude || typeof window.claude.use !== 'function') return;
+  const [db, user] = await Promise.all([claude.use('db'), claude.use('user')]);
+  if(!db || !user) return;
+
+  const SECS = {inicio:'Início',mentalidade:'Mentalidade',diagnostico:'Diagnóstico',atendimento:'Atendimento',scripts:'Scripts',objecoes:'Objeções',exposicao:'Exposição',exercicios:'Exercícios',indicadores:'Indicadores'};
+  const TOTAL = Object.keys(SECS).length;
+  const today = () => new Date().toLocaleDateString('sv-SE');
+  const nowIso = () => new Date().toISOString();
+  const clone = o => JSON.parse(JSON.stringify(o));
+  const fmtDate = iso => { try { return new Date(iso).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'}); } catch(e){ return '–'; } };
+  const fmtDay = iso => { try { return new Date(iso).toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'}); } catch(e){ return '–'; } };
+
+  const uid = await user.id();
+  let canWrite = uid != null;
+  try { const c = await user.can('data.write'); if(c === false) canWrite = false; } catch(e){}
+
+  /* ---------- Registro do próprio uso ---------- */
+  let state = null, ref = null, queue = Promise.resolve(), readOnly = !canWrite;
+  function day(){ const d = today(); state.dias = state.dias || {}; return state.dias[d] = state.dias[d] || {aberturas:0, secoes:[]}; }
+  function save(){
+    if(readOnly || !state) return Promise.resolve(false);
+    const body = clone(state);
+    queue = queue.then(() => ref.set(body)).then(() => true).catch(err => {
+      if(err && (err.code === 'invalid_argument' || err.code === 'not_granted' || err.code === 'revoked')){ readOnly = true; hideSaves(); }
+      else if(err && err.code === 'unavailable'){ return new Promise(r => setTimeout(r, 800 + Math.random()*800)).then(() => ref.set(body)).then(() => true, () => false); }
+      return false;
+    });
+    return queue;
+  }
+  function hideSaves(){ ['#save-eval','#save-ind'].forEach(s => { const el = $(s); if(el) el.hidden = true; }); }
+
+  if(canWrite){
+    try {
+      ref = db.doc('uso/' + uid);
+      const snap = await ref.get();
+      state = snap.exists ? clone(snap.data()) : {primeiroAcesso: nowIso(), dias:{}, avaliacoes:[], indicadores:[]};
+      state.avaliacoes = state.avaliacoes || []; state.indicadores = state.indicadores || [];
+      state.ultimoAcesso = nowIso();
+      day().aberturas += 1;
+      const cur = (document.querySelector('.nav a.active, .chips a.active')||{}).getAttribute ? document.querySelector('.nav a.active, .chips a.active').getAttribute('href').slice(1) : 'inicio';
+      if(SECS[cur] && !day().secoes.includes(cur)) day().secoes.push(cur);
+      await save();
+      if(!readOnly){ $('#save-eval').hidden = false; $('#save-ind').hidden = false; }
+    } catch(e){ readOnly = true; }
+  }
+
+  /* Seções vistas: grava no máximo uma vez a cada 4 s, só quando muda */
+  let pending = new Set(), timer = null;
+  document.addEventListener('pb:section', e => {
+    if(readOnly || !state || !SECS[e.detail]) return;
+    if(day().secoes.includes(e.detail)) return;
+    pending.add(e.detail);
+    clearTimeout(timer);
+    timer = setTimeout(() => { const d = day(); let ch = false; pending.forEach(s => { if(!d.secoes.includes(s)){ d.secoes.push(s); ch = true; } }); pending.clear(); if(ch){ state.ultimoAcesso = nowIso(); save(); } }, 4000);
+  });
+
+  function flash(el, msg, ok){ el.textContent = msg; el.className = 'save-msg ' + (ok ? 'ok' : 'err'); clearTimeout(el._t); el._t = setTimeout(() => { el.textContent = ''; }, 4000); }
+
+  $('#btn-save-eval').addEventListener('click', async () => {
+    const msg = $('#eval-msg'), aluno = $('#aluno').value.trim();
+    if(!aluno){ flash(msg, 'Escreva o nome do aluno avaliado.', false); $('#aluno').focus(); return; }
+    const itens = [...document.querySelectorAll('#checklist input')].map(i => i.checked);
+    state.avaliacoes.push({em: nowIso(), aluno: aluno.slice(0,80), pontos: itens.filter(Boolean).length, itens});
+    if(state.avaliacoes.length > 150) state.avaliacoes = state.avaliacoes.slice(-150);
+    state.ultimoAcesso = nowIso();
+    const btn = $('#btn-save-eval'); btn.disabled = true;
+    const ok = await save(); btn.disabled = false;
+    if(ok){ flash(msg, 'Avaliação de ' + aluno + ' salva no histórico.', true); $('#aluno').value = ''; }
+    else flash(msg, 'Não foi possível salvar agora. Tente de novo em instantes.', false);
+  });
+
+  $('#btn-save-ind').addEventListener('click', async () => {
+    const msg = $('#ind-msg'); const n = id => parseFloat($(id).value) || 0;
+    const a = n('#i-atend'), v = n('#i-vendas'), f = n('#i-fat'), c = n('#i-comp'), r = n('#i-recomp');
+    if(!a){ flash(msg, 'Preencha os atendimentos da semana.', false); return; }
+    state.indicadores.push({em: nowIso(), atendimentos:a, vendas:v, faturamento:f, compraram:c, recompraram:r, conversao: a? v/a : null, ticket: a? f/a : null, recompra: c? r/c : null});
+    if(state.indicadores.length > 104) state.indicadores = state.indicadores.slice(-104);
+    state.ultimoAcesso = nowIso();
+    const btn = $('#btn-save-ind'); btn.disabled = true;
+    const ok = await save(); btn.disabled = false;
+    flash(msg, ok ? 'Indicadores salvos no histórico.' : 'Não foi possível salvar agora. Tente de novo em instantes.', ok);
+  });
+
+  /* ---------- Painel de histórico (editores e dono) ---------- */
+  let admin = false;
+  try { admin = await user.canEdit(); } catch(e){}
+  if(!admin) return;
+  ['#nav-hist','#chip-hist','#historico'].forEach(s => { const el = $(s); if(el) el.hidden = false; });
+  document.dispatchEvent(new CustomEvent('pb:admin'));
+
+  const brl = new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'});
+  const pct = v => v == null ? '–' : (v*100).toLocaleString('pt-BR',{maximumFractionDigits:1}) + '%';
+  const status = $('#hist-status');
+  let rows = [], open = new Set();
+  const loadTimer = setTimeout(() => { if(!rows.length) status.textContent = 'Ainda não foi possível carregar o histórico. Ele aparece aqui assim que a conexão responder.'; }, 10000);
+
+  db.collection('uso').onSnapshot(snap => {
+    if(!snap.metadata.fromCache) clearTimeout(loadTimer);
+    rows = snap.docs.filter(d => d.exists).map(d => ({id: d.id, ...d.data()}));
+    render();
+  }, err => { clearTimeout(loadTimer); status.textContent = 'O histórico não está disponível nesta visualização.'; });
+
+  function summarize(r){
+    const dias = r.dias || {}; const keys = Object.keys(dias).sort();
+    const vistas = new Set(); let aberturas = 0;
+    keys.forEach(k => { aberturas += dias[k].aberturas || 0; (dias[k].secoes||[]).forEach(s => vistas.add(s)); });
+    const av = r.avaliacoes || [];
+    const media = av.length ? av.reduce((a,b) => a + (b.pontos||0), 0) / av.length : null;
+    return {dias: keys.length, aberturas, vistas: vistas.size, av, media, ind: r.indicadores || [], ultimo: r.ultimoAcesso, primeiro: r.primeiroAcesso, keys, diasObj: dias};
+  }
+
+  async function render(){
+    const ids = rows.map(r => r.id);
+    let ps = {};
+    try { ps = await user.profiles(ids); } catch(e){}
+    const nameOf = id => (ps[id] && ps[id].name) || 'Pessoa sem nome';
+    const data = rows.map(r => ({r, s: summarize(r)})).sort((a,b) => String(b.s.ultimo||'').localeCompare(String(a.s.ultimo||'')));
+    const week = Date.now() - 7*864e5;
+    const ativos = data.filter(d => d.s.ultimo && Date.parse(d.s.ultimo) >= week).length;
+    const totAb = data.reduce((a,d) => a + d.s.aberturas, 0);
+    const totAv = data.reduce((a,d) => a + d.s.av.length, 0);
+    $('#t-pessoas').textContent = data.length;
+    $('#t-ativos').textContent = ativos;
+    $('#t-aberturas').textContent = totAb.toLocaleString('pt-BR');
+    $('#t-aval').textContent = totAv.toLocaleString('pt-BR');
+    status.textContent = data.length ? '' : 'Ninguém usou o playbook ainda. Assim que alguém abrir a página, aparece aqui.';
+
+    const tb = $('#hist-body'); tb.textContent = '';
+    data.forEach(({r, s}) => {
+      const tr = document.createElement('tr'); tr.className = 'hrow'; tr.tabIndex = 0; tr.setAttribute('aria-expanded', open.has(r.id) ? 'true' : 'false');
+      const cells = [nameOf(r.id), s.ultimo ? fmtDate(s.ultimo) : '–', String(s.dias), String(s.aberturas), s.vistas + '/' + TOTAL, s.av.length ? s.av.length + ' · média ' + s.media.toLocaleString('pt-BR',{maximumFractionDigits:1}) + '/8' : '–'];
+      cells.forEach((c,i) => { const td = document.createElement('td'); td.textContent = c; if(i===0) td.className = 'who'; if(i>=2) td.className = 'num'; tr.appendChild(td); });
+      const toggle = () => { open.has(r.id) ? open.delete(r.id) : open.add(r.id); render(); };
+      tr.addEventListener('click', toggle);
+      tr.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); } });
+      tb.appendChild(tr);
+      if(open.has(r.id)){
+        const dr = document.createElement('tr'); dr.className = 'hdetail'; const td = document.createElement('td'); td.colSpan = 6;
+        const wrap = document.createElement('div'); wrap.className = 'hd-grid';
+        const block = (title, items, empty) => { const b = document.createElement('div'); const h = document.createElement('h4'); h.textContent = title; b.appendChild(h);
+          if(!items.length){ const p = document.createElement('p'); p.className = 'hd-empty'; p.textContent = empty; b.appendChild(p); }
+          else { const ul = document.createElement('ul'); items.forEach(t => { const li = document.createElement('li'); li.textContent = t; ul.appendChild(li); }); b.appendChild(ul); }
+          wrap.appendChild(b); };
+        block('Dias de uso', s.keys.slice(-10).reverse().map(k => { const d = s.diasObj[k]; const [y,m,dd] = k.split('-'); return `${dd}/${m}/${y} · ${d.aberturas||0} abertura(s) · ${(d.secoes||[]).map(x => SECS[x]||x).join(', ') || 'sem seções'}`; }), 'Sem registros.');
+        block('Avaliações salvas', s.av.slice(-10).reverse().map(a => `${fmtDay(a.em)} · ${a.aluno || 'Aluno'} · ${a.pontos}/8`), 'Nenhuma avaliação salva.');
+        block('Indicadores salvos', s.ind.slice(-6).reverse().map(i => `${fmtDay(i.em)} · conversão ${pct(i.conversao)} · ticket ${i.ticket==null?'–':brl.format(i.ticket)} · recompra ${pct(i.recompra)}`), 'Nenhum indicador salvo.');
+        const meta = document.createElement('p'); meta.className = 'hd-meta'; meta.textContent = 'Primeiro acesso: ' + (s.primeiro ? fmtDate(s.primeiro) : '–');
+        td.appendChild(wrap); td.appendChild(meta); dr.appendChild(td); tb.appendChild(dr);
+      }
+    });
+  }
 })();
 </script>
 
-</body>
-</html>
+</body></html>
